@@ -1,0 +1,204 @@
+.portfolio {
+    display: grid;
+    grid-template: 30% 30% 30% / 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 2%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 3px;
+}
+
+li a {
+    display: block;
+    float: left;
+    width: 60px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.active {
+    background: #030733;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color:white;
+}
+
+li a:hover {
+    background: #09A5BA;
+}
+
+
+footer {
+    background: #444;
+    text-align: center;
+    margin-top: 3%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    display: block;
+    color: white;
+}
+
+.source-link {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    padding-right: 8%;
+    padding-left: 8%;
+    width: 80%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon {
+    height: inherit;
+    width: inherit;
+}
+
+.form {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 50px 50px 50px 1fr 50px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30px 30px 30px 100px 1fr;
+    grid-template-areas: "name-label name" "email-label email" "device-label device" "message-label message" "submit submit";
+    grid-gap: 10px;
+    margin-bottom: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#device {
+    grid-area: device;
+}
+
+#device-lable {
+    grid-area: device-label;
+}
+
+#name-label {
+    grid-area: name-label;
+
+}
+
+#email-label {
+    grid-area: email-label;
+
+}
+
+#message-label {
+    grid-area: message-label;
+
+}
+
+#name {
+    grid-area: name;
+
+}
+
+#email {
+    grid-area: email;
+}
+
+#message {
+    grid-area: message;
+    word-wrap: break-word;
+}
+
+input[type=text],
+input[type=email] {
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+input[type=submit] {
+    grid-area: submit;
+    border-radius: 5px;
+    border-style: none;
+    min-height: 30px;
+    min-width: 50px;
+    margin-left: 40%;
+    margin-right: 5%;
+}
+
+.article {
+    display: grid;
+    width: 60%;
+    grid-template-areas: "profile about";
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.profile {
+    grid-area: profile;
+    max-width: 200px;
+}
+
+.about {
+    grid-area: about;
+    max-width: 400px;
+}
+
+body {
+    display: block;
+    margin: auto;
+}
+
+.subtitle {
+    margin-left: 15%
+}
+
+.title {
+    margin-left: 10%;
+}
+
+p {
+    text-align: center;
+}
