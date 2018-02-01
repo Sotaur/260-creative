@@ -246,6 +246,11 @@ p {
     width: 100%;
 }
 
+.filler {
+    display: grid;
+    justify-content: center;
+}
 
-#content {
+.filler img {
+    max-width: 121px;
 }
